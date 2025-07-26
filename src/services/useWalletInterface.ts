@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { WalletConnectContext } from "../contexts/WalletConnectContext";
-import { walletConnectWallet } from "./wallets/walletconnect/walletConnectClient";
+// import { walletConnectWallet } from "./wallets/walletconnect/walletConnectClient";
 
 // Purpose: This hook is used to determine which wallet interface to use
 // Example: const { accountId, walletInterface } = useWalletInterface();
@@ -11,7 +11,7 @@ export const useWalletInterface = () => {
   if (walletConnectCtx.accountId) {
     return {
       accountId: walletConnectCtx.accountId,
-      walletInterface: walletConnectWallet
+      walletInterface: null // walletConnectWallet - temporarily disabled
     }
   } else {
     return {
