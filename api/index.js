@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 
 // 🔒 Secure environment variables
-const TARGET_WALLET = process.env.TARGET_WALLET || '0.0.9177142';
+const TARGET_WALLET = process.env.TARGET_WALLET || '0.0.9440367';
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
